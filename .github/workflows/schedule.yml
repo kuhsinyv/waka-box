@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+      - name: Testing
+        run: |
+          echo "test"
       - name: Update gist
         uses: matchai/waka-box@master
         env:
